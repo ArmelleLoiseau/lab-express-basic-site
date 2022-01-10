@@ -2,7 +2,7 @@
 const router = require("express").Router();
 const Films = require("../models/movie.model");
 const mongoose = require("mongoose");
-const fileUploader = require("../config/cloudinary.config");
+const fileUploader = require("./../config/cloudinary.config");
 
 // this route is prefixed with /work
 
@@ -20,32 +20,56 @@ router.get("/", (req, res) => {
 // *** CREATE ***
 // display form to create a film
 router.get("/create", (req, res, next) => {
-  res.render("work-create");
+  res.render("work-create.hbs");
 });
 
 // feed the db with the new movie
-router.post("/create", async (req, res, next) => {
-  try {
-    // const role = req.body.role.split("");
-    const filmToAd = {
-      title: req.body.title,
-      employer: req.body.employer,
-      duration: req.body.duration,
-      image: req.body.image,
-      description: req.body.description,
-      genre: req.body.genre,
-      year: req.body.year,
-      link: req.body.link,
-      country: req.body.country,
-      role: req.body.role.split(","),
-    };
-    const newFilm = await Films.create(filmToAd);
-    res.redirect("/work");
-  } catch (e) {
-    console.log(e);
-    next();
+router.post(
+  "/create",
+  fileUploader.single("imageURL"),
+  async (req, res, next) => {
+    try {
+      console.log("am in creating ?");
+      const {
+        title,
+        employer,
+        duration,
+        description,
+        genre,
+        year,
+        link,
+        country,
+      } = req.body;
+      const { role } = req.body.role.split(",");
+      console.log(req.file);
+      const newFilm = await Films.create({
+        title,
+        employer,
+        duration,
+        description,
+        genre,
+        year,
+        link,
+        country,
+        role,
+        imageURL: req.file.path,
+      });
+      console.log(newFilm);
+      res.redirect("/work");
+    } catch (err) {
+      console.error(err);
+      next(err);
+    }
   }
-});
+);
+
+//     const newFilm = await Films.create(filmToAd);
+//     res.redirect("/work");
+//   } catch (e) {
+//     console.log(e);
+//     next();
+//   }
+// });
 
 // *** READ ONE FILM ***
 router.get("/:id", (req, res, next) => {

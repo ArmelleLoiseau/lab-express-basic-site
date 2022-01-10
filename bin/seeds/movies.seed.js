@@ -7,7 +7,8 @@ const movies = [
     title: "EHPAD, seuls face au Coronavirus",
     employer: "Médecins sans Frontières / MSF",
     duration: "00:10",
-    image: "",
+    imageURL:
+      "https://res.cloudinary.com/dznbfuvat/image/upload/c_scale,h_360/v1641842472/portfolio-project/ehpad_wtayzl.png",
     description:
       "Reportage dans des établissements pour personnes âgées dépendantes pendant l'épidémie de Covid-19.",
     genre: "reportage",
@@ -20,7 +21,8 @@ const movies = [
     title: "Les femmes de Blantyre",
     employer: "Médecins sans Frontières / MSF",
     duration: "00:27",
-    image: "",
+    imageURL:
+      "https://res.cloudinary.com/dznbfuvat/image/upload/c_scale,h_360/v1641842476/portfolio-project/womenofblantyre_avbpyt.png",
     description:
       "Série documentaire sur les femmes atteintes du cancer du col de l'utérus au Malawi.",
     genre: "série documentaire",
@@ -33,7 +35,8 @@ const movies = [
     title: "Des enfants subissent des contrôles de police abusifs et racistes.",
     employer: "Human Rigthts Watch / HRW",
     duration: "00:04",
-    image: "",
+    imageURL:
+      "https://res.cloudinary.com/dznbfuvat/image/upload/c_scale,h_360/v1641842475/portfolio-project/hrw-police_cbhxmz.png",
     description:
       "Vidéo accompagnant le rapport de HRW sur les contrôles de police au faciès.",
     genre: "reportage",
@@ -46,7 +49,8 @@ const movies = [
     title: "Des enfants migrants privés de protection.",
     employer: "Human Rigthts Watch / HRW",
     duration: "00:04",
-    image: "",
+    imageURL:
+      "https://res.cloudinary.com/dznbfuvat/image/upload/c_scale,h_360/v1641842475/portfolio-project/reportage_c5hair.png",
     description:
       "Vidéo accompagnant le rapport de HRW sur l'arrivée en France des mineurs non accompagnés.",
     genre: "reportage",
@@ -60,7 +64,8 @@ const movies = [
       "Welcome back - vivre avec des troubles mentaux ou épileptiques au Liberia",
     employer: "Médecins sans Frontières / MSF",
     duration: "00:35",
-    image: "",
+    imageURL:
+      "https://res.cloudinary.com/dznbfuvat/image/upload/c_scale,h_360/v1641842472/portfolio-project/Liberia_p9mn7o.png",
     description:
       "Documentaire sur le quotidien des personnes atteintes de troubles mentaux ou épileptiques au Liberia.",
     genre: "documentaire",
@@ -73,7 +78,8 @@ const movies = [
     title: "Yémen - A deux heures du front",
     employer: "Médecins sans Frontières / MSF",
     duration: "00:24",
-    image: "",
+    imageURL:
+      "https://res.cloudinary.com/dznbfuvat/image/upload/c_scale,h_360/v1641842477/portfolio-project/yemen_emueni.png",
     description:
       "5 jours dans le quotidien des équipes MSF dans l'hôpital de Mocha, alors que le conflit yéménite fait rage à Hodeida, à deux heures de route.",
     genre: "série documentaire",
@@ -86,7 +92,8 @@ const movies = [
     title: "Corps en guerre",
     employer: "Médecins sans Frontières / MSF",
     duration: "00:00",
-    image: "",
+    imageURL:
+      "https://res.cloudinary.com/dznbfuvat/image/upload/c_scale,h_360/v1641842472/portfolio-project/corpsenguerre_fuu03n.png",
     description:
       "Corps en Guerre est une expérience mobile qui raconte les histoires de quatre personnes et de leurs familles, marquées par les guerres qui secouent le Moyen-Orient depuis des années.",
     genre: "documentaire multimedia",
@@ -99,7 +106,8 @@ const movies = [
     title: "Les invisibles de Samos",
     employer: "Médecins sans Frontières / MSF",
     duration: "00:05",
-    image: "",
+    imageURL:
+      "https://res.cloudinary.com/dznbfuvat/image/upload/c_scale,h_360/v1641842475/portfolio-project/samos_nvrowg.png",
     description:
       "Récits de demandeurs d'asile coincés pendant des mois sur les îles grecques, dans l'attente de pouvoir reprendre leur voyage.",
     genre: "documentaire",
@@ -112,7 +120,8 @@ const movies = [
     title: "République centrafricaine - La valise ou le cercueil",
     employer: "Médecins sans Frontières / MSF",
     duration: "00:32",
-    image: "",
+    imageURL:
+      "https://res.cloudinary.com/dznbfuvat/image/upload/c_scale,h_360/v1641842472/portfolio-project/car_ggjsjb.png",
     description:
       "Témoignage des équipes MSF présentes en République centrafricaine quand le conflit éclate",
     genre: "documentaire",

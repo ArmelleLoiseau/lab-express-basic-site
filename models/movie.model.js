@@ -4,7 +4,7 @@ const movieSchema = new Schema({
   title: String,
   employer: String,
   duration: String,
-  image: String,
+  imageURL: String,
   description: String,
   genre: String,
   year: Number,

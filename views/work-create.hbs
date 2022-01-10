@@ -1,5 +1,5 @@
 <div class="add-form">
-    <form action="/work/create" method="post">
+    <form action="/work/create" enctype="multipart/form-data" method="post">
     <label for="title">Title:</label>
     <input id="title" name="title" type="text" placeholder="Film title">
     
@@ -10,7 +10,7 @@
     <input id="duration" name="duration" type="text" placeholder="00:00">
     
     <label for="image">Image:</label>
-    <input type="text" id="image" name="image" placeholder="www.myphoto.com">
+    <input type="file" id="image" name="imageURL">
 
     <label for="description">Description:</label>
     <input type="text" id="description" name="description" placeholder="Some infos about the film">

@@ -1,10 +1,12 @@
 <h1 id="work-title">My work</h1>
 
-{{#each films}}
-    <div class="film-card">
-        <img src="{{this.image}}" alt="{{this.title}}">
-        <h4>{{this.title}}</h4>
-        <a href="/work/{{this._id}}">Plus d'infos</a>
-    </div>
-{{/each}}
+<div id="work-container">
+    {{#each films}}
+        <div class="film-card">
+            <img src="{{this.imageURL}}" alt="{{this.title}}">
+            <h4>{{this.title}}</h4>
+            <a href="/work/{{this._id}}">Plus d'infos</a>
+        </div>
+    {{/each}}
+</div>
 
